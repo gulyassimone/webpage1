@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/alap.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
+    <script type="text/javascript" src="scripts/styleswitcher.js"></script>
 </head>
 
 <body>
@@ -41,12 +42,12 @@
         <form action="mailto:h2e9aq@inf.elte.hu" method="post" enctype="text/plain">
             <fieldset>
                 <legend>Adataid</legend>
-                <p><label>Név: <input type="text" name="nev" id="nev" required> </label></p>
+                <p><label>Név: <input type="text" name="nev" id="nev" size="60"> </label></p>
                 <p>Nem:
                     <input type="radio" name="nem" id="nem1" value="Férfi"><label for="nem1">Férfi</label>
                     <input type="radio" name="nem" id="nem2" value="Nő"><label for="nem2">Nő</label>
                 </p>
-                <p><label><strong>Email cím:</strong> <input type="email" name="email" id="email" required></label>
+                <p><label><strong>Email</strong>: <input type="email" name="email" id="email" size="60"  required></label>
                 </p>
                 <p><input type="checkbox" name="nyilvanos" id="nyilvanos" value="igen"> <label
                         for="nyilvanos">Hozzájárulok
@@ -71,7 +72,7 @@
                                   id="kedvencszereplo"></textarea></label>
                 </p>
                 <p>
-                    Ajánlanád-e másoknak?:
+                    Ajánlanád-e másoknak?:<br>
                     <input type="radio" name="ajanlas" id="a1" value="Igen"><label for="a1">Igen</label>
                     <input type="radio" name="ajanlas" id="a2" value="Nem"><label for="a2">Nem</label>
                 </p>
