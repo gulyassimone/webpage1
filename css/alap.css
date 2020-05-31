@@ -13,9 +13,7 @@ header
 {
     background-image: url("../media/death-stranding-cover1.jpg");
     background-repeat: no-repeat;
-    /*background-position: top;*/
     background-size: cover;
-   /* position: relative;*/
     min-height: 600px;
     top: 40px;
     left: 40px;
@@ -44,7 +42,7 @@ h2 {
  }
 strong
 {
-    color: red;
+    color: #5c0819;
     font-weight: bold;
 }
 header nav ul li
@@ -65,6 +63,7 @@ nav#gyengenlato {
     position:absolute;
     top: 20px;
     right: 28px;
+
 }
 nav#gyengenlato strong
 {
@@ -98,13 +97,29 @@ a[href="#fomenu"]
     text-decoration: none;
     transition: all .5s;
 }
+.modositott
+{
+    color: #0000b5;
+}
 a
 {
     transition: all .5s;
 }
+a:not(nav) {
+    color: #0000b5;
+}
+
+/* visited link */
+article#forras a:visited {
+    color: #34515e;
+}
+/* visited link */
+footer a:visited {
+    color: #34515e;
+}
 a:hover
 {
-    color: #2e6da4;
+    color: #0000b5;
     text-decoration: underline;
 }
 .rejtett {position:absolute; left:-9999px;}
@@ -112,6 +127,10 @@ a:hover
 h1,h2,h3
 {
     text-shadow: 3px 3px 3px #ccc;
+}
+h3
+{
+    text-align: center;
 }
 p
 {
@@ -152,10 +171,15 @@ figcaption {
     width: 100%;
     height: auto;
 }
+video {
+    display: block;
+    margin: auto;
+    width:100%;
+}
 main,footer
 {
     width: 70%;
-    min-width: 400px;
+/*    min-width: 400px;*/
     max-width: 2000px;
     margin: 0 auto;
 }
@@ -185,15 +209,79 @@ article#dijak table td
     padding: 5px;
 }
 caption{caption-side: bottom}
+/* Slideshow container */
+
 /*------------footer------------*/
 footer address
 {
     text-align: center;
 }
+
 @media screen and (max-width: 900px) {
     header a {
         float: none;
         display: block;
         text-align: left;
     }
+    header nav#gyengenlato
+    {
+        width: 100px;
+    }
+    header div#felirat
+    {
+        width: 150px;
+    }
+    main
+    {
+        margin: 5px;
+        width: auto;
+    }
+    figure
+    {
+        font-size: 80%;
+    }
+}
+
+/*---galery----*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #0000b5;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slideshow-container img
+{
+    width: 100%;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
