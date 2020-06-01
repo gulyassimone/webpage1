@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/alap.css" title="normal">
     <link rel="alternate stylesheet" type="text/css" href="css/nagybetus.css" title="nagybetus">
-    <script type="text/javascript" src="scripts/styleswitcher.js"></script>
+    <script src="scripts/styleswitcher.js"></script>
 </head>
 
-<body>
+<body id="szereplo">
 <nav id="tartalomraugras">
     <h2 class="rejtett">Ugrás az oldalon belül</h2>
     <a class="rejtett" href="#tartalom">Ugrás a tartalomra</a>
@@ -26,19 +26,19 @@
         <nav id="fomenu">
             <h2 class="rejtett">Főmenü</h2>
             <ul>
-                <li><a href="index.html" title="Összefoglaló">Főoldal</a></li>
-                <li><a href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
-                <li><a href="kritika.html"
+                <li><a class="index" href="index.html" title="Összefoglaló">Főoldal</a></li>
+                <li><a class="szereplok" href="szereplok.html" title="A játék szereplői">Szereplők</a></li>
+                <li><a class="kritika" href="kritika.html"
                        title="A játék kritikája és dijainak összefoglalója">Kritika</a>
                 </li>
-                <li><a href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
+                <li><a class="velemeny" href="velemenyed.html" title="Itt megírhatod a véleményed">Véleményed</a></li>
             </ul>
         </nav>
     </div>
 </header>
 
 <main id="tartalom">
-    <h1>Szereplők:</h1>
+    <h1>Főszereplők:</h1>
     <aside>
         <nav id="oldalmenu">
             <h2 class="rejtett">Oldalmenü</h2>
@@ -55,6 +55,7 @@
         </nav>
     </aside>
     <article id="szereplok">
+        <h2>Szereplők:</h2>
         <section id="sam" class="oszlopos">
             <h2><span style="text-decoration: underline">S</span>AM PORTER BRIDGES</h2>
             <figure>
