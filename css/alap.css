@@ -5,7 +5,7 @@ html
     font-family: 'Open Sans',Arial,Helvetica,sans-serif;;
 }
 /*-------------header-----------*/
-header
+header,#header
 {
     background-image: url("../media/death-stranding-cover1.jpg");
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ header
     left: 40px;
     background-position: 40% 10%;
 }
-header div#felirat
+header div#felirat, #header div#felirat
 {
     background: rgba(255, 255, 255, 0.6);
     width: 400px;
@@ -47,12 +47,12 @@ strong
     color: #5c0819;
     font-weight: bold;
 }
-header nav ul li {
+header nav ul li , #header .nav ul li{
     display: inline;
     white-space: nowrap;
 }
 
-header nav a
+header nav a, #header .nav a
 {
     color: black;
     text-decoration: none;
@@ -61,25 +61,25 @@ header nav a
     font-size: 1.5em;
     margin-right: 1em;
 }
-nav#gyengenlato {
+nav#gyengenlato, .nav#gyengenlato  {
     position:absolute;
     top: 20px;
     right: 28px;
 
 }
-nav#gyengenlato strong
+nav#gyengenlato strong,.nav#gyengenlato strong
 {
     font-size:120%;
 }
 a#normalbetu {display: none}
 /*------------main------------*/
-main nav
+main nav, #tartalom .nav
 {
 
     text-align: right;
     margin-bottom: 20px;
 }
-main aside nav
+main aside nav, #tartalom #aside .nav
 {
     text-align: left;
     font-variant: small-caps;
@@ -88,7 +88,7 @@ main aside nav
     margin: 0 10px 10px 20px;
     font-size: 24px;
 }
-main aside nav a
+main aside nav a, #tartalom #aside .nav a
 {
     color: black;
     text-decoration: none;
@@ -112,11 +112,11 @@ a:not(nav) {
 }
 
 /* visited link */
-article#forras a:visited {
+article#forras a:visited, .article#forras a:visited  {
     color: #34515e;
 }
 /* visited link */
-footer a:visited {
+footer a:visited, #keszito a:visited {
     color: #34515e;
 }
 a:hover
@@ -138,13 +138,13 @@ p
 {
     text-align: left;
 }
-section
+section, .section
 {
     border-top: 1px solid #ccc;
     padding: 20px;
 }
 
-.oszlopos
+.oszlopos, div .oszlopos
 {
 
     column-width: 400px;
@@ -154,13 +154,13 @@ section
     -webkit-column-count: 2;
     -moz-column-count: 2;
 }
-figure {
+figure , .figure{
     position: relative;
 }
-figure img {
+figure img , .figure img {
     display: block;
 }
-figcaption {
+figcaption, .figcaption {
     background: rgba(0, 0, 0, 0.5);
     color: #FFF;
     position: absolute;
@@ -178,19 +178,19 @@ video {
     margin: auto;
     width:100%;
 }
-main,footer
+main,footer, #tartalom,#keszito
 {
     width: 70%;
 /*    min-width: 400px;*/
     max-width: 2000px;
     margin: 0 auto;
 }
-article#osszefoglalo
+article#osszefoglalo, .article#osszefoglalo
 {
     border-top: 1px solid #ccc;
     padding: 20px;
 }
-article#forras
+article#forras,.article#forras
 {
     border-top: 1px solid #ccc;
     padding: 20px;
@@ -272,36 +272,36 @@ input[type=reset]:hover {
 /* Slideshow container */
 
 /*------------footer------------*/
-footer address
+footer address, #keszito #address
 {
     text-align: center;
 }
 
 @media screen and (max-width: 900px) {
-    header a {
+    header a, #header a{
         float: none;
         display: block;
         text-align: left;
     }
-    header nav#gyengenlato
+    header nav#gyengenlato, #header .nav#gyengenlato
     {
         width: 100px;
     }
-    header div#felirat
+    header div#felirat, #header div#felirat
     {
         width: 150px;
     }
-    main
+    main, #tartalom
     {
         margin: 5px;
         width: auto;
     }
-    figure
+    figure, .figure
     {
         font-size: 80%;
     }
 
-    header nav ul
+    header nav ul,  #header .nav ul
     {
         padding: 0;
     }
